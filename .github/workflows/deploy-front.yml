@@ -2,7 +2,7 @@ name: deploy-front
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   # This workflow contains a single job called "build"
@@ -20,4 +20,4 @@ jobs:
           server: "${{ secrets.CAPROVER_SERVER }}"
           password: "${{ secrets.CAPROVER_PASSWORD }}"
           appname: "${{ secrets.CAPROVER_FRONT_APPNAME }}"
-          branch: master
+          branch: main
