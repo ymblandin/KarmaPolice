@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Score from "./Score";
 import Gauge from "./Gauge";
 import Bonus from "./Bonus";
@@ -6,10 +7,18 @@ import Speed from "./Speed";
 import "./Interface.css";
 
 function Interface() {
+  const [timer, setTimer] = useState(120);
+
+  useEffect(() => {
+    const gameTime = setInterval(() => setTimer((time) => time - 1), 1000);
+    return () => {
+      clearInterval(gameTime);
+    };
+  }, []);
   return (
     <div className="Interface">
       <Score />
-      <Timer />
+      <Timer timer={timer} />
       <Gauge />
       <Gauge />
       <Bonus />
