@@ -1,6 +1,6 @@
 import { arc } from "d3-shape";
 import { scaleLinear } from "d3-scale";
-import "./Speed.css";
+import "../assets/css/speed.css";
 
 // For a better understanding see https://wattenberger.com/blog/gauge //
 const getCoordsOnArc = (angle, offset = 10) => [
@@ -39,7 +39,7 @@ function Speed({ value = 35, min = 0, max = 100 }) {
   const markerLocation = getCoordsOnArc(angle, 1 - (1 - 0.65) / 2);
 
   return (
-    <div className="Speed">
+    <div className="speed">
       <svg
         style={{ overflow: "visible" }}
         width="15em"

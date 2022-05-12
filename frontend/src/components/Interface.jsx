@@ -5,7 +5,7 @@ import Bonus from "./Bonus";
 import Timer from "./Timer";
 import Speed from "./Speed";
 import Utils from "../services/Utils";
-import "./Interface.css";
+import "../assets/css/interface.css";
 
 function Interface() {
   const [timer, setTimer] = useState(120);
@@ -36,7 +36,7 @@ function Interface() {
     };
   }, []);
   return (
-    <div className="Interface">
+    <div className="interface">
       <Score />
       <Timer timer={timer} />
       <Gauge level={enduranceLevel} position="first" />
