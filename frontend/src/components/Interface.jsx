@@ -9,6 +9,7 @@ import "./Interface.css";
 
 function Interface() {
   const [timer, setTimer] = useState(120);
+  const [speed] = useState(Math.floor(Math.random() * 101));
   const [enduranceLevel, setEnduranceLevel] = useState(100);
 
   useEffect(() => {
@@ -35,7 +36,7 @@ function Interface() {
       <Gauge level={enduranceLevel} position="first" />
       <Gauge level={enduranceLevel} position="second" />
       <Bonus />
-      <Speed />
+      <Speed value={speed} />
     </div>
   );
 }
