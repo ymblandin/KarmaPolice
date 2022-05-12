@@ -1,7 +1,14 @@
-import "./Gauge.css";
+import "../assets/css/gauge.css";
 
-function Gauge() {
-  return <div className="Gauge">Gauge</div>;
+function Gauge({ level, position }) {
+  return (
+    <div className={`gauge ${position}`}>
+      <div
+        className={`gauge-front ${position}`}
+        style={{ height: `${level}%` }}
+      />
+    </div>
+  );
 }
 
 export default Gauge;
