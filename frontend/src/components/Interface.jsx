@@ -14,10 +14,16 @@ function Interface() {
   useEffect(() => {
     const enduranceRandomEvolution = setInterval(() => {
       setEnduranceLevel((endurance) => {
-        if (endurance > 0 && endurance <= 100) {
+        if (endurance > 0 && endurance < 100) {
           return Utils.getRandomGaugeEvolution() < 5
             ? endurance + 1
             : endurance - 2;
+        }
+        if (endurance === 100) {
+          return endurance - 1;
+        }
+        if (endurance === 0) {
+          return endurance + 2;
         }
         return endurance;
       });

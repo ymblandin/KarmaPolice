@@ -2,7 +2,4 @@
   z-index: 2;
   position: absolute;
   color: red;
-  max-height: 100vh;
-  max-width: 100vw;
-  border: 1px dashed red;
 }
