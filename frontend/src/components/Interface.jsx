@@ -8,6 +8,7 @@ import "./Interface.css";
 
 function Interface() {
   const [timer, setTimer] = useState(120);
+  const [speed] = useState(Math.floor(Math.random() * 101));
 
   useEffect(() => {
     const gameTime = setInterval(() => setTimer((time) => time - 1), 1000);
@@ -22,7 +23,7 @@ function Interface() {
       <Gauge />
       <Gauge />
       <Bonus />
-      <Speed />
+      <Speed value={speed} />
     </div>
   );
 }
