@@ -1,8 +1,8 @@
-import "./Model3D.css";
+import "../assets/css/model3D.css";
 
 function Model3D() {
   return (
-    <div className="Model3D">
+    <div className="model3D">
       <img src="/src/assets/savanna.jpg" alt="Savanne" />
     </div>
   );

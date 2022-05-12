@@ -1,4 +1,4 @@
-.Interface > * {
+.interface > * {
   z-index: 2;
   position: absolute;
   color: red;
