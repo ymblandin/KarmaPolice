@@ -1,4 +1,10 @@
 .score {
-  left: 100px;
-  top: 50px;
+  left: 50px;
+  top: 10px;
+  font-size: 2rem;
+  font-family: arcade;
+}
+
+.score p {
+  margin: 0;
 }

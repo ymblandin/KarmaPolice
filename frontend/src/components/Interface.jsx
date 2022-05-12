@@ -11,6 +11,7 @@ function Interface() {
   const [timer, setTimer] = useState(120);
   const [speed] = useState(Math.floor(Math.random() * 101));
   const [enduranceLevel, setEnduranceLevel] = useState(100);
+  const [score] = useState(200000);
 
   useEffect(() => {
     const enduranceRandomEvolution = setInterval(() => {
@@ -37,7 +38,7 @@ function Interface() {
   }, []);
   return (
     <div className="interface">
-      <Score />
+      <Score score={score} />
       <Timer timer={timer} />
       <Gauge level={enduranceLevel} position="first" />
       <Gauge level={enduranceLevel} position="second" />
