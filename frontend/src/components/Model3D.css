@@ -1,0 +1,8 @@
+.Model3D {
+  z-index: 1;
+}
+
+.Model3D img {
+  width: 100vw;
+  height: 100vh;
+}
