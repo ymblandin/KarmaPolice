@@ -14,7 +14,6 @@ function Interface() {
   useEffect(() => {
     const enduranceRandomEvolution = setInterval(() => {
       setEnduranceLevel((endurance) => {
-        console.log(endurance);
         if (endurance > 0 && endurance <= 100) {
           return Utils.getRandomGaugeEvolution() < 5
             ? endurance + 1
