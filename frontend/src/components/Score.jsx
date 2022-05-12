@@ -1,7 +1,7 @@
-import "./Score.css";
+import "../assets/css/score.css";
 
 function Score() {
-  return <div className="Score">Score</div>;
+  return <div className="score">Score</div>;
 }
 
 export default Score;
