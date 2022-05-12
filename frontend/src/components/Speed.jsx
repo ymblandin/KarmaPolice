@@ -33,7 +33,7 @@ function Speed({ value = 35, min = 0, max = 100 }) {
     .cornerRadius(1)();
 
   // Add a color gradient on the gauge //
-  const colorScale = scaleLinear().domain([0, 1]).range(["#228B22", "#D2042D"]);
+  const colorScale = scaleLinear().domain([0, 1]).range(["#00FF00", "#D2042D"]);
   const gradientSteps = colorScale.ticks(10).map((val) => colorScale(val));
 
   const markerLocation = getCoordsOnArc(angle, 1 - (1 - 0.65) / 2);
