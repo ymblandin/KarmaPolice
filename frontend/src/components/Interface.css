@@ -3,6 +3,9 @@
   position: absolute;
   top: 0;
   color: red;
+  max-height: 100vh;
+  max-width: 100vw;
+  border: 1px dashed red;
 }
 
 .Bonus {
